@@ -1,0 +1,40 @@
+====== QUESTION ======
+
+Escreva um programa que leia 2 valores X e Y e que imprima todos os valores entre eles cujo resto da divisão dele por 5 for igual a 2 ou igual a 3.
+
+Entrada
+O arquivo de entrada contém 2 valores positivos inteiros quaisquer, não necessariamente em ordem crescente.
+
+Saída
+Imprima todos os valores conforme exemplo abaixo, sempre em ordem crescente.
+
+
+
+====== ANSWER ======
+
+import java.util.*
+
+
+fun main(args: Array<String>) {
+
+    val sc = Scanner(System.`in`)
+
+    val x = sc.nextInt()
+    val y = sc.nextInt()
+    val maior: Int
+    val menor: Int
+
+    if (x > y) {
+        maior = x
+        menor = y
+    } else {
+        maior = y
+        menor = x
+    }
+
+    for (i in menor + 1 until maior) {
+        if (i % 5 == 2 || i % 5 == 3) println(i)
+    }
+}
+
+
