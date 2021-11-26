@@ -1,10 +1,13 @@
-Teste de criacao de arquivo via cmd 
+fun main(args: Array<String>) {
 
-Alteracao do arquivo 
-
-
-Add Linha 3
+        println("Hello World!")
+}   
 
 
-Linha 4
+
+
+
+
+
+
 
