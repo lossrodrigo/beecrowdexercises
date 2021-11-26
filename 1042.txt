@@ -1,0 +1,34 @@
+
+====== Question 1042 ======
+
+Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente, uma linha em branco e em seguida, os valores na sequência como foram lidos.
+
+Entrada
+A entrada contem três números inteiros.
+
+Saída
+Imprima a saída conforme foi especificado.
+
+
+
+====== Answer ======
+
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    val sc = Scanner(System.`in`)
+
+    val v: List<Int> = listOf(sc.nextInt(), sc.nextInt(), sc.nextInt())
+
+    val sorted = v.sorted()
+
+    for (i in sorted) {
+        println(i)
+    }
+    println("")
+
+    for (i in v) {
+        println(i)
+    }
+}
