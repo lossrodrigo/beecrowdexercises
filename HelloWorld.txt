@@ -1,0 +1,1 @@
+Texte de criacao de arquivo via cmd 
